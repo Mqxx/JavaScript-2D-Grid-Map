@@ -1,0 +1,35 @@
+@import './colors.less';
+
+@font-face {
+    font-family: rimouski_sb;
+    src: url('../font/rimouski_sb.otf');
+}
+
+*,
+*::before,
+*::after {
+  font-family: rimouski_sb, sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.debug-border {
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
+
+body {
+    background-color: @gray;
+
+    // background grid
+    #background-grid {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+    }
+
+
+}
